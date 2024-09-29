@@ -40,12 +40,12 @@ def training_examples(hparams, x_ref, y_ref, t, grid_measured, grid_initial, t_i
 """Command line interface for training the PINN"""
 @click.command()
 @click.option(
-    "--data_dir", default='../Data', type=str, help="Directory of training data"
+    "--data_dir", default='../data', type=str, help="Directory of training data"
 )
 @click.option(
     "--config_file", default='./config.yml', type=str, help="Directory of training data"
 )
-@click.option('--use_wandb', is_flag=True,
+@click.option('--use_wandb', is_flag=False,
               help='Use weights and biases to monitor training')
 def train_PINN(data_dir, config_file, use_wandb):
     if use_wandb:

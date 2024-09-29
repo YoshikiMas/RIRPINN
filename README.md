@@ -35,7 +35,8 @@ python ./data/DL_data.py
 To train the network, execute the following command in your terminal:
 
 ```bash
-python ./src/run_PINN.py
+cd src
+python /run_PINN.py
 ```
 
 An example of how to use the trained network to reconstruct the sound field is provided in the `./src/inference_nb.ipynb` notebook.

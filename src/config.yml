@@ -58,7 +58,7 @@ train_epochs:
   value: 150000
 checkpoint_dir:
   desc: "Directory to save network checkpoints"
-  value: './DTUdata_paper_siren_attMLP_100ms'
+  value: '../DTUdata_paper_siren_attMLP_100ms'
 sparse_data:
   desc: "Use Jabra dataset with a few measurement positions and data for initial conditions"
   value: False
